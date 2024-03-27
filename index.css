@@ -11,11 +11,16 @@
     align-items: center;
 }
 
+img{
+    width:100px
+}
+
 .item {
     float: left;
     width: 700px;
     height: 300px;
     position: relative;
+    display:none;
 }
 
 .item img {
@@ -30,6 +35,10 @@
     bottom: 20px;
     text-align: right;
     color: white;
+}
+
+.item.active{
+    display:block;
 }
 
 .thumbs {
@@ -67,6 +76,21 @@
     cursor: pointer;
     z-index: 999;
 }
+
+.item .prev{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    border-radius: 50%;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 999;
+}
+
 
 .next {
     bottom: 0;
